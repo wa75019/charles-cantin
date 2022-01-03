@@ -13,13 +13,57 @@ collections:
       fields:
         - label: 'Category'
           name: "category"
-          widget: list
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Image", name: "thumbnail", widget: "image"}
-    - label: "Images"
-      name: "images"
-      file: "lib/images.md"
+    - label: "Mariage"
+      name: "mariage"
+      file: "lib/mariage.md"
+      fields:
+        - label: "Images"
+          name: "images"
+          widget: list
+          fields:
+            - { label: "Image", name: "thumbnail", widget: "image"}
+    - label: "Grossesse"
+      name: "grossesse"
+      file: "lib/grossesse.md"
+      fields:
+        - label: "Images"
+          name: "images"
+          widget: list
+          fields:
+            - { label: "Image", name: "thumbnail", widget: "image"}
+    - label: "Bébé"
+      name: "bébé"
+      file: "lib/bebe.md"
+      fields:
+        - label: "Images"
+          name: "images"
+          widget: list
+          fields:
+            - { label: "Image", name: "thumbnail", widget: "image"}
+    - label: "Famille"
+      name: "famille"
+      file: "lib/famille.md"
+      fields:
+        - label: "Images"
+          name: "images"
+          widget: list
+          fields:
+            - { label: "Image", name: "thumbnail", widget: "image"}
+    - label: "Bapteme"
+      name: "bapteme"
+      file: "lib/bapteme.md"
+      fields:
+        - label: "Images"
+          name: "images"
+          widget: list
+          fields:
+            - { label: "Image", name: "thumbnail", widget: "image"}
+    - label: "Couple"
+      name: "couple"
+      file: "lib/couple.md"
       fields:
         - label: "Images"
           name: "images"

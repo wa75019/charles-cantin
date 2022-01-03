@@ -7,8 +7,8 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-    - label: "Category-Gallery"
-      name: "category-gallery"
+    - label: "Category-images"
+      name: "category-images"
       file: "lib/catGallery.md"
       fields:
         - label: 'Category'
@@ -17,3 +17,11 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Image", name: "thumbnail", widget: "image"}
+    - label: "Images"
+      name: "images"
+      widget: list
+      fields:
+      - { label: "Category", name: "category", widget: "string"}
+        widget: list
+        fields:
+          - { label: "Image", name: "thumbnail", widget: "image"}

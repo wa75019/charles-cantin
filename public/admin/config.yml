@@ -16,10 +16,6 @@ collections:
           widget: list
           fields:
             - { label: "Name", name: "name", widget: "string"}
-            - { label: "Image-categorie", name: "thumbnail", widget: "image"}
-            widget: list
-            fields:
-              - { label: "Images", name: "thumbnail", widget: "image"}
-
+            - { label: "Image", name: "thumbnail", widget: "image"}
 
 

@@ -17,5 +17,15 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Image", name: "thumbnail", widget: "image"}
+    - label: "Images"
+      name: "images"
+      file: "lib/images.md"
+      fields:
+        - label: "Images"
+          name: "images"
+          widget: list
+          fields:
+            - { label: "Image", name: "thumbnail", widget: "image"}
+
 
 

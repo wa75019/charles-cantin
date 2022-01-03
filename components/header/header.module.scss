@@ -1,0 +1,37 @@
+@import '../../styles/colors.scss';
+
+$height-header : 200px;
+
+.navHeader{
+    padding: 0;
+    .header{
+        height: auto;
+        padding: 20px;
+        background-color: $light !important;
+    }
+    .headerLogo{
+        width: 150px;
+        margin-left: 20px;
+    }
+}
+    @media (min-width: 991.98px) {
+        .navHeader{
+            .header{
+                height: $height-header;
+            }
+            .headerLogo{
+                width: 250px;
+                margin-left: 180px;
+            }
+            .headerMenu{
+                margin-left: 55%;
+                a{
+                    margin: 30px;
+                }
+            }
+            
+            
+        }
+    
+
+  }

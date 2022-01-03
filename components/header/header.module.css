@@ -1,0 +1,31 @@
+.navHeader {
+  padding: 0;
+}
+
+.navHeader .header {
+  height: auto;
+  padding: 20px;
+  background-color: #D9D9D9 !important;
+}
+
+.navHeader .headerLogo {
+  width: 150px;
+  margin-left: 20px;
+}
+
+@media (min-width: 991.98px) {
+  .navHeader .header {
+    height: 200px;
+  }
+  .navHeader .headerLogo {
+    width: 250px;
+    margin-left: 180px;
+  }
+  .navHeader .headerMenu {
+    margin-left: 55%;
+  }
+  .navHeader .headerMenu a {
+    margin: 30px;
+  }
+}
+/*# sourceMappingURL=header.module.css.map */

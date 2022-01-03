@@ -1,0 +1,33 @@
+@import "./colors.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+p, h1, h2, h3 {
+  color: $font;
+}
+a {
+  color: $dark !important;
+  text-decoration: none !important;
+}
+a.active{
+  color: $light-sec !important;
+}
+a:hover {
+  color: $light-sec !important;
+  transition: 0.5s ease-in;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

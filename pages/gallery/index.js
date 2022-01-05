@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 import { getGalleryCategoryContent} from '../../components/posts'
 
 export default function Gallery({ allCategories }) {
-
+//console.log(allCategories)
   return (
     <Layout>
       <p className={styles.textCategory}>Cliquez sur une catégorie</p>
@@ -14,6 +14,7 @@ export default function Gallery({ allCategories }) {
           <div className={styles.category} key={name}>
             <img src={thumbnail} alt={name} />
             <h3>{name}</h3>
+            {console.log({name})}
           </div>
             ))}
       </div>

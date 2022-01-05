@@ -9,7 +9,7 @@ collections:
     files:
     - label: "Categories"
       name: "categories"
-      file: "lib/gallery.md"
+      file: "lib/cat/gallery.md"
       fields:
         - label: "category"
           name: "category"

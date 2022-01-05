@@ -2,17 +2,27 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const postsDirectory = path.join(process.cwd(), 'lib')
+const photosDirectory = path.join(process.cwd(), 'lib')
+const catDirectory = path.join(process.cwd(), 'lib/cat')
 
-export function getGalleryCategoryContent() {
+export function getGalleryCategories() {
     
-    const fullPath = path.join(postsDirectory, 'gallery.md')
+    const fullPath = path.join(catDirectory, 'gallery.md')
     const id = fullPath.replace(/\.md$/, '')
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const matterResult = matter(fileContents)
     const allCategories = [ ...matterResult.data ]
 
   return allCategories
+}
+
+export function getCategoryContent() {
+    const fileNames = fs.readdirSync(photosDirectory)
+    let i = 0
+    const allPhotosData = fileNames.map(fileName => {
+      const file = fileName.replace(/\.md$/, '')
+      const id = file + i++
+    })
 }
 
 export function getSortedPostsData() {

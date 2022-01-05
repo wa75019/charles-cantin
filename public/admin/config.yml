@@ -11,11 +11,8 @@ collections:
       name: "category-images"
       file: "lib/gallery.md"
       fields:
-        - label: 'Category'
-          name: "category"
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Image", name: "thumbnail", widget: "image"}
+        - { label: "Name", name: "name", widget: "string"}
+        - { label: "Image", name: "thumbnail", widget: "image"}
     - label: "Mariage"
       name: "mariage"
       file: "lib/mariage.md"

@@ -6,4 +6,26 @@
   font-size: 40px;
   color: white;
 }
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.categories .category {
+  width: 250px;
+  height: 200px;
+  border: 5px black solid;
+}
+
+.categories .category img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
 /*# sourceMappingURL=gallery.module.css.map */

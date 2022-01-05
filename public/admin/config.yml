@@ -12,7 +12,7 @@ collections:
       file: "lib/gallery.md"
       fields:
         - label: "category"
-          name: ""
+          name: "category"
           widget: list
           fields:
             - { label: "Name", name: "name", widget: "string"}

@@ -1,10 +1,10 @@
 import styles from './gallery.module.css'
 import Layout from '../../components/layout/layout'
 import { MdKeyboardArrowDown } from 'react-icons/md'
-import { getGalleryCategoryContent} from '../../components/posts'
+import { getGalleryCategories } from '../../components/posts'
 
 export default function Gallery({ allCategories }) {
-//console.log(allCategories)
+
   return (
     <Layout>
       <p className={styles.textCategory}>Cliquez sur une catégorie</p>
@@ -13,8 +13,7 @@ export default function Gallery({ allCategories }) {
         {allCategories.map(({ name, thumbnail }) => (
           <div className={styles.category} key={name}>
             <img src={thumbnail} alt={name} />
-            <h3>{name}</h3>
-            {console.log({name})}
+            <p>{name}</p>
           </div>
             ))}
       </div>
@@ -25,7 +24,7 @@ export default function Gallery({ allCategories }) {
 }
 
 export async function getStaticProps() {
-  const allCategories = getGalleryCategoryContent()
+  const allCategories = getGalleryCategories()
   return {
     props: {
       allCategories

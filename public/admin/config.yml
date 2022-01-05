@@ -7,11 +7,11 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-    - label: "Category-images"
-      name: "category-images"
+    - label: "Categories"
+      name: "categories"
       file: "lib/gallery.md"
       fields:
-        - label: "categories"
+        - label: "category"
           widget: list
           fields:
             - { label: "Name", name: "name", widget: "string"}

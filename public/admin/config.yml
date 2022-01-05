@@ -10,10 +10,12 @@ collections:
     - label: "Category-images"
       name: "category-images"
       file: "lib/gallery.md"
-      widget: list
       fields:
-        - { label: "Name", name: "name", widget: "string"}
-        - { label: "Image", name: "thumbnail", widget: "image"}
+        - label: "categories"
+          widget: list
+          fields:
+            - { label: "Name", name: "name", widget: "string"}
+            - { label: "Image", name: "thumbnail", widget: "image"}
     - label: "Mariage"
       name: "mariage"
       file: "lib/mariage.md"

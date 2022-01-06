@@ -18,11 +18,17 @@ export function getGalleryCategories() {
 
 export function getCategoryContent() {
     const fileNames = fs.readdirSync(photosDirectory)
-    let i = 0
+
     const allPhotosData = fileNames.map(fileName => {
-      const file = fileName.replace(/\.md$/, '')
-      const id = file + i++
+      const id = fileName.replace(/\.md$/, '')
+
+      return {
+        id
+      }
+      
     })
+    return allPhotosData
+
 }
 
 export function getSortedPostsData() {

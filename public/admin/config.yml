@@ -19,7 +19,7 @@ collections:
             - { label: "Image", name: "thumbnail", widget: "image"}
     - label: "Mariage"
       name: "mariage"
-      file: "lib/mariage.md"
+      file: "lib/photos/mariage.md"
       fields:
         - label: "Images"
           name: "images"
@@ -28,7 +28,7 @@ collections:
             - { label: "Image", name: "thumbnail", widget: "image"}
     - label: "Grossesse"
       name: "grossesse"
-      file: "lib/grossesse.md"
+      file: "lib/photos/grossesse.md"
       fields:
         - label: "Images"
           name: "images"
@@ -37,7 +37,7 @@ collections:
             - { label: "Image", name: "thumbnail", widget: "image"}
     - label: "Bébé"
       name: "bébé"
-      file: "lib/bebe.md"
+      file: "lib/photos/bebe.md"
       fields:
         - label: "Images"
           name: "images"
@@ -46,7 +46,7 @@ collections:
             - { label: "Image", name: "thumbnail", widget: "image"}
     - label: "Famille"
       name: "famille"
-      file: "lib/famille.md"
+      file: "lib/photos/famille.md"
       fields:
         - label: "Images"
           name: "images"
@@ -55,7 +55,7 @@ collections:
             - { label: "Image", name: "thumbnail", widget: "image"}
     - label: "Bapteme"
       name: "bapteme"
-      file: "lib/bapteme.md"
+      file: "lib/photos/bapteme.md"
       fields:
         - label: "Images"
           name: "images"
@@ -64,7 +64,7 @@ collections:
             - { label: "Image", name: "thumbnail", widget: "image"}
     - label: "Couple"
       name: "couple"
-      file: "lib/couple.md"
+      file: "lib/photos/couple.md"
       fields:
         - label: "Images"
           name: "images"

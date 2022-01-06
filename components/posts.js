@@ -2,8 +2,10 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const photosDirectory = path.join(process.cwd(), 'lib')
+
 const catDirectory = path.join(process.cwd(), 'lib/cat')
+const photoDirectory = path.join(process.cwd(), 'lib/photos')
+
 
 export function getGalleryCategories() {
     
@@ -16,14 +18,18 @@ export function getGalleryCategories() {
   return allCategories
 }
 
-export function getCategoryContent() {
-    const fileNames = fs.readdirSync(photosDirectory)
+export function getCategoryContent( ) {
+    const fileNames = fs.readdirSync(photoDirectory)
 
     const allPhotosData = fileNames.map(fileName => {
       const id = fileName.replace(/\.md$/, '')
+      const fullPath = path.join(photoDirectory, fileName)
+      const fileContents = fs.readFileSync(fullPath, 'UTF-8')
+      const matterResult = matter(fileContents)
 
       return {
-        id
+        id,
+        ...matterResult.data
       }
       
     })

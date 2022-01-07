@@ -9,5 +9,4 @@ images:
   - thumbnail: /images/mariage7.jpg
   - thumbnail: /images/mariage8.jpg
   - thumbnail: /images/mariage9.jpg
-  - thumbnail: /images/mariage10.jpg
 ---

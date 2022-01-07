@@ -21,6 +21,9 @@ a {
 }
 a.active{
   color: $light-sec !important;
+  p{
+    color: $light-sec !important;
+  }
 }
 a:hover {
   color: $light-sec !important;

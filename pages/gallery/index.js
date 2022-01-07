@@ -27,7 +27,7 @@ allPhotoData.forEach(element => {
     imgSrc = []
   }
 })
-console.log(imgSrc)
+
 imgSrc = imgSrc.map(function(item){
   return <img src={item.thumbnail} key={item.thumbnail} /> 
 })
@@ -53,13 +53,6 @@ imgSrc = imgSrc.map(function(item){
         {imgSrc}
       </Masonry>
 
-        {/* 
-      {imgSrc = imgSrc.map(({ thumbnail }) => (
-        <img src={thumbnail} key={thumbnail} /> 
-        ))}
-      */}
-
-          
     </Layout>
   )
 }

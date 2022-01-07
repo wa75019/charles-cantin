@@ -5,6 +5,7 @@
 .svg {
   font-size: 40px;
   color: white;
+  margin-bottom: 20px;
 }
 
 .categories {
@@ -39,7 +40,6 @@
   font-size: 0.7rem;
   text-align: center;
 }
-
 
 @media (min-width: 991.98px) {
   .categories .category {

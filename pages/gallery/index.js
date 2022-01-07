@@ -11,27 +11,31 @@ import Masonry from 'react-masonry-css'
 export default function Gallery({ allCategories, allPhotoData }) {
 
 const [fileName, setFileName] = useState('')
-
+var imgSrc = []
 const handleClick = ( e, name ) => {
   e.preventDefault
   setFileName(name)
 }
-const styledFileName = fileName.toLowerCase().replace(/[éèê]/g, "e")
-var imgSrc = null
+
+var styledFileName = fileName.toLowerCase().replace(/[éèê]/g, "e")
 
 allPhotoData.forEach(element => {
   if (element.id === styledFileName) {
     imgSrc = element.images
-  }
-  else {
-    imgSrc = []
-  }
+  } 
 })
 
-imgSrc = imgSrc.map(function(item){
-  return <img src={item.thumbnail} key={item.thumbnail} /> 
-})
-
+if (imgSrc !== undefined) {
+  var images = imgSrc.map(function(item){
+    return <img src={item.thumbnail} key={item.thumbnail} /> 
+  })
+}
+const breakpointColumnsObj = {
+  default: 3,
+  1100: 3,
+  700: 3,
+  500: 2
+};
   return (
     <Layout>
       <p className={styles.textCategory}>Cliquez sur une catégorie</p>
@@ -47,10 +51,10 @@ imgSrc = imgSrc.map(function(item){
             ))}
       </div>
       <Masonry
-        breakpointCols={3}
+        breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column">
-        {imgSrc}
+        {images}
       </Masonry>
 
     </Layout>

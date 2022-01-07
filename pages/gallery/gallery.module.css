@@ -15,12 +15,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .categories .category {
-  cursor: pointer;
-  width: 250px;
-  height: 200px;
+  width: 110px;
+  height: 100px;
   background-color: #47555e;
   margin: 0 5px 0 5px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -30,12 +31,50 @@
 .categories .category img {
   width: 100%;
   max-width: 100%;
-  height: 163px;
+  height: 83px;
   display: block;
 }
 
 .categories .category p {
-  padding-top: 5px;
+  font-size: 0.7rem;
   text-align: center;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px;
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 991.98px) {
+  .categories .category {
+    cursor: pointer;
+    width: 200px;
+    height: 150px;
+  }
+  .categories .category img {
+    height: 120px;
+  }
+  .categories .category p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=gallery.module.css.map */

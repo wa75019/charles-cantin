@@ -25,6 +25,10 @@ a.active {
   color: #609F96 !important;
 }
 
+a.active p {
+  color: #609F96 !important;
+}
+
 a:hover {
   color: #609F96 !important;
   -webkit-transition: 0.5s ease-in;

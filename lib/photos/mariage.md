@@ -1,4 +1,13 @@
 ---
 images:
   - thumbnail: /images/mariage1.jpg
+  - thumbnail: /images/mariage2.jpg
+  - thumbnail: /images/mariage3.jpg
+  - thumbnail: /images/mariage4.jpg
+  - thumbnail: /images/mariage5.jpg
+  - thumbnail: /images/mariage6.jpg
+  - thumbnail: /images/mariage7.jpg
+  - thumbnail: /images/mariage8.jpg
+  - thumbnail: /images/mariage9.jpg
+  - thumbnail: /images/mariage10.jpg
 ---

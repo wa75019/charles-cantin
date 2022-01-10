@@ -1,3 +1,4 @@
+import styles from './pricing.module.css'
 import Layout from '../../components/layout/layout'
 
 

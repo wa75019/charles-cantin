@@ -12,11 +12,19 @@ export default function Footer() {
                     <h1>{name} - </h1>
                     <h3>{job}</h3>
                 </div>
-                <Link href='/contact'>
-                    <a> 
-                    <p> contact</p>
-                    </a>
-                </Link> 
+                 
+                <div className={styles.footerSocial}>
+                    <Link href='https://facebook.com' passHref={true}>
+                        <a target="_blank"> 
+                        <img src="/images/facebook.png" alt="logo facebook" />
+                        </a>
+                    </Link> 
+                    <Link href='https://instagram.com' passHref={true}>
+                        <a target="_blank"> 
+                        <img src="/images/instagram.png" alt="logo instagram" />
+                        </a>
+                    </Link> 
+                </div>
             </div>
         </>
 

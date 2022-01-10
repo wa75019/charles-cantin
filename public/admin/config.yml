@@ -71,6 +71,17 @@ collections:
           widget: list
           fields:
             - { label: "Image", name: "thumbnail", widget: "image"}
+    - label: "Prestations"
+      name: "prestations"
+      file: "lib/tarifs/tarifs.md"
+      fields:
+        - label: "Prestation"
+          name: "prestation"
+          widget: list
+          fields:
+            - { label: "Name", name: "name", widget: "string"}
+            - { label: "Price", name: "price", widget: "string"}
+            - { label: "Description", name: "description", widget: "string"}
 
 
 

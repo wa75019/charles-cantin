@@ -29,6 +29,18 @@ $height-footer : 100px;
     p{
         color: $dark;
     }
+    .footerSocial{
+        display: flex;
+        flex-direction: row;
+       a{
+           img{
+               margin-left: 20px;
+               margin-right: 20px;
+               width: 20px;
+               height: 20px;
+           }
+       }
+    }
     
 }
 
@@ -59,6 +71,16 @@ $height-footer : 100px;
                     color: $light-sec;
                     transition: 1s ease-in;
                 }
+            }
+            .footerSocial{
+                flex-direction: row;
+               a{
+                   img{
+                       width: 30px;
+                       height: 30px;
+                       margin-right: 50px;
+                   }
+               }
             }
         }
     }

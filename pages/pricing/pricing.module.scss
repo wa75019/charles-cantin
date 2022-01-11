@@ -1,0 +1,93 @@
+@import '../../styles/colors.scss';
+
+.contentPrices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    p {
+        color: $dark;
+        text-align: center;
+    }
+    .prices{
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+    .description {
+        width: 220px;
+        height: 250px;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10vh 20px 0 20px;
+        background-color: $light;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 1;
+        margin-top: 2vh;
+        p {
+            padding: 10px;
+            color: $font;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 50px;
+            background-color: $light-sec;
+            p{
+                margin : 0;
+            }
+        }
+    }
+}
+.info {
+    p {
+        padding: 30px;
+        font-size: 0.6rem;
+    }
+}
+
+    @media (min-width: 991.98px) {
+        .contentPrices {
+            p{
+                font-size: 0.8rem;
+            }
+            .prices {
+                flex-direction: row;
+                order: 1;   
+            }
+            .description {
+                width: 220px;
+                height: 250px;
+                border-radius: 5px;     
+            }
+            .contact {
+                order: 2;
+                p {
+                    padding: 20px;
+                    font-size: 1.1rem;
+                }
+                .button {
+                    a {
+                        :hover {
+                            background-color: $dark;
+                            transition: 1s ease-in;
+                        }
+                    }
+                }
+            }
+        }
+        .info {
+            margin-right: 50%;
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+    }

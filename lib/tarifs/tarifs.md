@@ -1,5 +1,5 @@
 ---
-prestation:
+
   - name: Juste moi
     price: 135 Euros
     description: Séance pour une personne, en extérieur ou en studio

@@ -1,1 +1,130 @@
-/* No CSS *//*# sourceMappingURL=pricing.module.css.map */
+.contentPrices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.contentPrices p {
+  color: #47555e;
+  text-align: center;
+}
+
+.contentPrices .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.contentPrices .description {
+  width: 220px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10vh 20px 0 20px;
+  background-color: #D9D9D9;
+}
+
+.contentPrices .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-top: 2vh;
+}
+
+.contentPrices .contact p {
+  padding: 10px;
+  color: white;
+}
+
+.contentPrices .contact .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 50px;
+  background-color: #609F96;
+}
+
+.contentPrices .contact .button p {
+  margin: 0;
+}
+
+.info p {
+  padding: 30px;
+  font-size: 0.6rem;
+}
+
+@media (min-width: 991.98px) {
+  .contentPrices p {
+    font-size: 0.8rem;
+  }
+  .contentPrices .prices {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .contentPrices .description {
+    width: 220px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .contentPrices .contact {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contentPrices .contact p {
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+  .contentPrices .contact .button a :hover {
+    background-color: #47555e;
+    -webkit-transition: 1s ease-in;
+    transition: 1s ease-in;
+  }
+  .info {
+    margin-right: 50%;
+  }
+  .info p {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=pricing.module.css.map */

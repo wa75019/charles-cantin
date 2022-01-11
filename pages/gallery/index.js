@@ -9,7 +9,7 @@ import Masonry from 'react-masonry-css'
 
 
 export default function Gallery({ allCategories, allPhotoData }) {
-
+console.log (allCategories)
 const [fileName, setFileName] = useState('')
 var imgSrc = []
 const handleClick = ( e, name ) => {
@@ -64,7 +64,6 @@ const breakpointColumnsObj = {
 export async function getStaticProps() {
   const allCategories = getGalleryCategories()
   const allPhotoData = getCategoryContent()
-
   return {
     props: {
       allCategories,

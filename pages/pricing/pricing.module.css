@@ -61,7 +61,7 @@
 
 .contentPrices .contact p {
   padding: 10px;
-  color: white;
+  color: #D9D9D9;
 }
 
 .contentPrices .contact .button {
@@ -84,6 +84,7 @@
 }
 
 .info p {
+  color: #D9D9D9;
   padding: 30px;
   font-size: 0.6rem;
 }

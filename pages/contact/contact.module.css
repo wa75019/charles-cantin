@@ -1,18 +1,5 @@
 .form {
-  margin-top: 150px;
-}
-
-.form .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.form .formStyle {
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,5 +7,31 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.form label {
+  color: #D9D9D9;
+  margin-bottom: 5px;
+}
+
+.form textarea, .form input {
+  background-color: #D9D9D9;
+  margin-bottom: 10px;
+  width: 250px;
+  padding: 10px;
+}
+
+.form button {
+  margin: 20px auto 50px auto;
+  background-color: #609F96;
+  color: #D9D9D9;
+  height: 50px;
+  width: 150px;
+}
+
+@media (min-width: 991.98px) {
+  .form textarea, .form input {
+    width: 500px;
+  }
 }
 /*# sourceMappingURL=contact.module.css.map */

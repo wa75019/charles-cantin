@@ -9,70 +9,64 @@ function ContactForm() {
   }
   return (
     <form onSubmit={handleSubmit} method='POST' action='https://formspree.io/f/moqrjadz' className={styles.form}>
-      <div className={styles.name}>
-        <div classname={styles.formStyle}>
           <label htmlFor="lname">
-            Nom
+            Nom :
           </label>
           <input
             id="lname"
             type="lname" 
             name="lname"
+            required
           />
           <ValidationError 
             prefix="Lname" 
             field="lname"
             errors={state.errors}
           />
-        </div>
-        <div classname={styles.formStyle}>
           <label htmlFor="fname">
-            Prénom
+            Prénom :
           </label>
           <input
             id="fname"
             type="fname" 
             name="fname"
+            required
           />
           <ValidationError 
             prefix="Fname" 
             field="fname"
             errors={state.errors}
-          />
-        </div>
-      </div>
-      <div className={styles.formStyle}>
+          />  
         <label htmlFor="email">
-          Email Address
+          Adresse E-mail :
         </label>
         <input
           id="email"
           type="email" 
           name="email"
+          required
         />
         <ValidationError 
           prefix="Email" 
           field="email"
           errors={state.errors}
         />
-      </div>
-      <div className={styles.formStyle}>
         <label htmlFor="email">
-          Message
+          Message :
         </label>
         <textarea
           id="message"
           name="message"
+          rows= "5"
+          required
         />
         <ValidationError 
           prefix="Message" 
           field="message"
           errors={state.errors}
         />
-      </div>
-      
       <button type="submit" disabled={state.submitting}>
-        Submit
+        Envoyez
       </button>
     </form>
   );
